@@ -2,16 +2,21 @@
 
 module SupportModule
   ( turtle
+  , nTimes
   , module Diagrams.Prelude
   , module Diagrams.TwoD.Path.Turtle
   , module Diagrams.TwoD.Path.Turtle.Aliases
   , module Control.Monad
+  , module Data.Char
   )
  where
 
 import Control.Monad
 import Data.Ratio
 import IHaskell.Display.Diagrams
+import Data.Char
+-- import "ghc" Util (nTimes)
+
 
 -- Boilerplate for diagrams.
 --
@@ -41,3 +46,10 @@ instance {-# OVERLAPPING  #-} Show (Ratio Integer) where
     showsPrec p x = case denominator x of
         1 -> showsPrec p (numerator x)
         _ -> showsPrec p (numerator x) . showString "/" . showsPrec p (denominator x)
+
+-- | loop: Compose a function with itself n times.  (nth rather than twice)
+nTimes :: Int -> (a -> a) -> (a -> a)
+-- https://hackage.haskell.org/package/ghc-8.10.2/docs/Util.html#v:nTimes
+nTimes 0 _ = id
+nTimes 1 f = f
+nTimes n f = f . nTimes (n-1) f
