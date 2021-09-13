@@ -13,19 +13,28 @@ https://docs.docker.com/get-docker/
 
 ## Visual Studio Code
 
+Jupyter support is improving rapidly. You should be on the latest version,
+at least August 2021.
+
 ### Extensions
 
-* Jupyter __ms-toolsai.jupyter@2021.8.2041215044__
+* Jupyter __ms-toolsai.jupyter@2021.8.2041215044__ (later versions are buggy at the time of this writing)
 * Haskell Syntax Highlighting __justusadam.language-haskell__
 * Remote - Containers __ms-vscode-remote.remote-containers__
 
 # Running
+
+## Method 1
 
 ```
 git clone https://github.com/jamesdbrock/testudinal-haskell.git
 cd testudinal-haskell
 code .
 ```
+
+Then make sure you click __Reopen in Container__ to run the devcontainer.
+
+## Method 2
 
 To run VS Code directly in the devcontainer,
 
@@ -48,6 +57,8 @@ environment for children.
   but if you are just experimentally clicking around the window and pressing buttons
   then you will very soon activate some browser function which takes you away from the page
   that you're on, which is very confusing.
+
+  [JupyterLab is dead, long live VS Code.](https://code.visualstudio.com/blogs/2021/08/05/notebooks)
 
 * [VS Code devcontainers](https://github.com/microsoft/vscode-dev-containers)
 
