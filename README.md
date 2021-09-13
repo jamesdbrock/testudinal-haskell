@@ -119,6 +119,14 @@ environment for children.
   [Thanks](https://gitlab.haskell.org/ghc/ghc/-/issues/10843),
   [Akio Takano](https://ghc-proposals.readthedocs.io/en/latest/proposals/0090-block-arguments.html).
 
+# Screenshots
+
+![](img/NameChangeOChart.png)
+
+![](img/TurtleDrawingWithIOActions.png)
+
+![](img/fern2.png)
+
 # Other Haskell Programming Education Resources
 
 [Codeworld](https://code.world/) by [Chris Smith](https://github.com/cdsmith)
