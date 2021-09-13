@@ -53,12 +53,10 @@ environment for children.
 
 * [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 
-  Browser-based Jupyter is actually pretty horrible. If you know where to click it works okay,
+  Browser-based Jupyter is actually pretty dreadful. If you know where to click it works okay,
   but if you are just experimentally clicking around the window and pressing buttons
-  then you will very soon activate some browser function which takes you away from the page
+  then you will very soon activate some browser function that takes you away from the page
   that you're on, which is very confusing.
-
-  [JupyterLab is dead, long live VS Code.](https://code.visualstudio.com/blogs/2021/08/05/notebooks)
 
 * [VS Code devcontainers](https://github.com/microsoft/vscode-dev-containers)
 
@@ -73,7 +71,7 @@ environment for children.
   [__diagrams__](https://archives.haskell.org/projects.haskell.org/diagrams/)
   package.
 
-* IHaskell Widgets
+* [IHaskell Widgets](https://github.com/gibiansky/IHaskell/tree/master/ihaskell-display/ihaskell-widgets)
 
   Thanks David Davó for [reviving __ihaskell-widgets__](https://gsoc21.ddavo.me/).
 
@@ -81,13 +79,12 @@ environment for children.
 
   All numbers are `Rational` by
   [default](https://www.haskell.org/tutorial/numbers.html#sect10.4)
-  in the notebook. The `Rational` numbers
-  exhibit the fewest surprises.
-  Anyone who has studied fractions will expect numbers to work the way `Rational`
-  numbers work, and rightly so.
-
+  in the notebook.
   When a `Rational` is shown, we show it with the `/` operator instead of the
   `%` constructor.
+  Anyone who has studied fractions will expect numbers to work this way,
+  and rightly so. It's abusive to inflict IEEE 754 on children.
+
 
 * [`LANGUAGE BlockArguments`](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/exts/block_arguments.html)
 
