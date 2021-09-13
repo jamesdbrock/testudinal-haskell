@@ -8,7 +8,9 @@ It’s a Jupyter notebook REPL running Haskell in Visual Studio Code.
 
 # Requirements
 
-There is some setup, which will have to be done by someone who knows how
+Docker and Visual Studio Code must be installed on your system.
+
+This will have to be done by someone who knows how
 to install and configure software development tools.
 
 ## Docker
