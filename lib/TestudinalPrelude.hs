@@ -3,6 +3,7 @@
 module SupportModule
   ( turtle
   , nTimes
+  , doTimes
   , module Diagrams.Prelude
   , module Diagrams.TwoD.Path.Turtle
   , module Diagrams.TwoD.Path.Turtle.Aliases
@@ -15,8 +16,6 @@ import Control.Monad
 import Data.Ratio
 import IHaskell.Display.Diagrams
 import Data.Char
--- import "ghc" Util (nTimes)
-
 
 -- Boilerplate for diagrams.
 --
@@ -53,3 +52,6 @@ nTimes :: Int -> (a -> a) -> (a -> a)
 nTimes 0 _ = id
 nTimes 1 f = f
 nTimes n f = f . nTimes (n-1) f
+
+doTimes = replicateM_
+
