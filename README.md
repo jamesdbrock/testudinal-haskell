@@ -3,6 +3,39 @@
 Haskell programming with Turtle drawing, for ages 9–13
 
 
+# Requirements
+
+## Docker
+
+You must have Docker installed and running on your system.
+
+https://docs.docker.com/get-docker/
+
+## Visual Studio Code
+
+### Extensions
+
+* Jupyter __ms-toolsai.jupyter@2021.8.2041215044__
+* Haskell Syntax Highlighting __justusadam.language-haskell__
+* Remote - Containers __ms-vscode-remote.remote-containers__
+
+# Running
+
+```
+git clone https://github.com/jamesdbrock/testudinal-haskell.git
+cd testudinal-haskell
+code .
+```
+
+To run VS Code directly in the devcontainer,
+
+https://code.visualstudio.com/docs/remote/devcontainer-cli#_opening-a-folder-directly-within-a-dev-container
+
+```
+cd testudinal-haskell
+devcontainer open .
+```
+
 # Ingredients
 
 These are the essential ingredients which
