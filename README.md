@@ -131,7 +131,7 @@ environment for children.
 
 # Other Haskell Programming Education Resources
 
-[Codeworld](https://code.world/) by [Chris Smith](https://github.com/cdsmith)
+[Codeworld](https://code.world/) by [Chris Smith](https://github.com/cdsmith) [thoughts](https://www.reddit.com/r/haskell/comments/ajmh9u/do_you_think_that_teaching_haskell_as_a_first/)
 
 [Codeworld Haskell](https://code.world/haskell) More Haskelly Codeworld
 
