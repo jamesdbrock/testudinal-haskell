@@ -4,6 +4,7 @@ module TestudinalPrelude
   ( turtle
   , nTimes
   , doTimes
+  , resetTurtle
   , module Diagrams.Prelude
   , module Diagrams.TwoD.Path.Turtle
   , module Diagrams.TwoD.Path.Turtle.Aliases
@@ -42,9 +43,9 @@ turtle x = diagram $ frame padding $ drawTurtle $ setPenWidth 4 *> innerdiagram
 -- Requires
 --     :extension FlexibleInstances
 instance {-# OVERLAPPING  #-} Show (Ratio Integer) where
-    showsPrec p x = case denominator x of
-        1 -> showsPrec p (numerator x)
-        _ -> showsPrec p (numerator x) . showString "/" . showsPrec p (denominator x)
+  showsPrec p x = case denominator x of
+    1 -> showsPrec p (numerator x)
+    _ -> showsPrec p (numerator x) . showString "/" . showsPrec p (denominator x)
 
 -- | loop: Compose a function with itself n times.  (nth rather than twice)
 nTimes :: Int -> (a -> a) -> (a -> a)
@@ -53,5 +54,14 @@ nTimes 0 _ = id
 nTimes 1 f = f
 nTimes n f = f . nTimes (n-1) f
 
+-- | loop: Do an IO action n times.
+doTimes :: Applicative m => Int -> m a -> m ()
 doTimes = replicateM_
 
+-- | Make the turtle do some IO action and then return to the same place where it started.
+resetTurtle action = do
+  p <- pos
+  h <- heading
+  action
+  setPos p
+  setHeading h
