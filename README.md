@@ -32,7 +32,9 @@ cd testudinal-haskell
 code .
 ```
 
-Then make sure you click __Reopen in Container__ to run the devcontainer.
+Then make sure you click the popup __Reopen in Container__ button to run the devcontainer.
+
+![Reopen In Containter](img/ReopenInContainer.png)]
 
 ## Method 2
 
@@ -44,6 +46,15 @@ https://code.visualstudio.com/docs/remote/devcontainer-cli#_opening-a-folder-dir
 cd testudinal-haskell
 devcontainer open .
 ```
+
+## Disable VS Code extensions
+
+Remember to turn off your Vim keybindings for children.
+
+```
+code --disable-extension vscodevim.vim .
+```
+
 
 # Ingredients
 
