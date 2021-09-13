@@ -1,6 +1,6 @@
 {-# LANGUAGE FlexibleInstances, ExplicitForAll, PackageImports #-}
 
-module SupportModule
+module TestudinalPrelude
   ( turtle
   , nTimes
   , doTimes
