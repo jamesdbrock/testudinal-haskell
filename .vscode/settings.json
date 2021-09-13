@@ -2,5 +2,7 @@
 	"editor.tabSize": 1,
 	"editor.autoSurround": "never",
 	"editor.scrollbar.verticalScrollbarSize": 20,
-	"workbench.colorTheme": "Quiet Light"
+	"workbench.colorTheme": "Quiet Light",
+	"window.zoomLevel": 2,
+	"editor.fontSize": 13
 }
