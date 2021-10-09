@@ -25,7 +25,8 @@
 		// https://stackoverflow.com/questions/68736618/error-loading-preloads-could-not-find-renderer
 		// https://github.com/microsoft/vscode/issues/123494
 		// https://github.com/microsoft/vscode-jupyter/issues/7045
-		"ms-toolsai.jupyter@2021.8.2025984474",
+		// "ms-toolsai.jupyter@2021.8.2025984474",
+		"ms-toolsai.jupyter",
 		"haskell.haskell"
 	]
 
@@ -43,4 +44,5 @@
 
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
+	// "remoteUser": "jovyan"
 }
