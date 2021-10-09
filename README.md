@@ -22,18 +22,18 @@ https://docs.docker.com/get-docker/
 ## Visual Studio Code
 
 Jupyter support is improving rapidly. You should be on the latest version,
-at least August 2021.
+at least September 2021.
 
 ### Extensions
 
-* Jupyter __ms-toolsai.jupyter@2021.8.2041215044__ (later versions are buggy at the time of this writing)
+* Jupyter __ms-toolsai.jupyter__
 * Haskell Syntax Highlighting __justusadam.language-haskell__
 * Remote - Containers __ms-vscode-remote.remote-containers__
 
 This commandline will install the extensions for you.
 
 ```
-code --install-extension ms-toolsai.jupyter@2021.8.2041215044 && code --install-extension justusadam.language-haskell && code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-toolsai.jupyter && code --install-extension justusadam.language-haskell && code --install-extension ms-vscode-remote.remote-containers
 ```
 
 # Running
@@ -110,8 +110,8 @@ environment for children.
   [default](https://www.haskell.org/tutorial/numbers.html#sect10.4)
   in the notebook.
   When a `Rational` is shown, we show it with the `/` operator instead of the
-  `%` constructor.
-  Anyone who has studied fractions will expect numbers to work this way,
+  `%` constructor. So when we compute `10/6` the result is `5/3`.
+  Anyone who has studied fourth-grade fractions will expect numbers to work this way,
   and rightly so. It's cruel to inflict IEEE 754 on children.
 
 * [`LANGUAGE BlockArguments`](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/exts/block_arguments.html)
@@ -145,7 +145,7 @@ Here are some things which need improvement.
 
 1. Error messages.
 
-   They’re terrible. We try to pretend that Haskell is a simple language with
+   They’re terrible. We try to pretend in this notebook that Haskell is a simple language with
    no type annotations but when a type error occurs it’s nonsense
    to a ten-year-old.
 
