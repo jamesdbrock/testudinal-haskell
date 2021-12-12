@@ -10,6 +10,7 @@ module TestudinalPrelude
   , module Diagrams.TwoD.Path.Turtle.Aliases
   , module Control.Monad
   , module Data.Char
+  , module Data.Foldable
   )
  where
 
@@ -17,6 +18,7 @@ import Control.Monad
 import Data.Ratio
 import IHaskell.Display.Diagrams
 import Data.Char
+import Data.Foldable
 
 -- Boilerplate for diagrams.
 --
@@ -36,7 +38,7 @@ turtle x = diagram $ frame padding $ drawTurtle $ setPenWidth 4 *> innerdiagram
  where
 --  innerdiagram = left 90 *> x
   innerdiagram = x
-  padding = maximum (boxExtents (boundingBox (diagram $ drawTurtle $ innerdiagram))) / 20
+  padding = maximum (boxExtents (boundingBox (diagram $ drawTurtle innerdiagram))) / 20
 
 -- Anyone who has studied fractions will expect numbers to work like this, and rightly so.
 --
