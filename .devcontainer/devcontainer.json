@@ -27,7 +27,8 @@
 		// https://github.com/microsoft/vscode-jupyter/issues/7045
 		// "ms-toolsai.jupyter@2021.8.2025984474",
 		"ms-toolsai.jupyter",
-		"haskell.haskell"
+		"haskell.haskell",
+		"justusadam.language-haskell"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
