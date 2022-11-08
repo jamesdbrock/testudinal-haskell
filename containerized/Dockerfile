@@ -5,7 +5,7 @@
 # docker run --privileged --rm --net=host --env DISPLAY=':0' -v $PWD:/home/jovyan/pwd --name testudinal_haskell testudinal_haskell:latest
 
 
-FROM ghcr.io/jamesdbrock/ihaskell-notebook:master
+FROM ghcr.io/ihaskell/ihaskell-notebook:master@sha256:7d8b0f2cf2d78afaa3088a31cafcec948408ac6bf228a6b73e001233ef40decf
 
 # RUN apt-get update && apt-get install -yq --no-install-recommends \
 
@@ -79,7 +79,7 @@ RUN apt-get update && apt-get -y install \
 # Switch back to jovyan user
 USER $NB_UID
 
-RUN code --install-extension ms-toolsai.jupyter@2021.8.2041215044
+RUN code --install-extension ms-toolsai.jupyter
 RUN code --install-extension justusadam.language-haskell
 
 # RUN mkdir ~/codedata

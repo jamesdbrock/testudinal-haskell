@@ -1,1 +1,1 @@
-FROM ghcr.io/jamesdbrock/ihaskell-notebook:master
+FROM ghcr.io/ihaskell/ihaskell-notebook:master@sha256:7d8b0f2cf2d78afaa3088a31cafcec948408ac6bf228a6b73e001233ef40decf
